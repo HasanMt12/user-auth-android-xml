@@ -53,7 +53,7 @@
                     android:layout_height="55dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
-                    android:background="@android:drawable/edit_text"
+                    android:background="@drawable/edit_text_border"
                     android:hint="First Name"
                     android:inputType="textPersonName"
                     android:padding="12dp" />
@@ -64,7 +64,7 @@
                     android:layout_height="55dp"
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
-                    android:background="@android:drawable/edit_text"
+                    android:background="@drawable/edit_text_border"
                     android:hint="Last Name"
                     android:inputType="textPersonName"
                     android:padding="12dp" />
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="16dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/edit_text_border"
                 android:hint="Email Address"
                 android:inputType="textEmailAddress"
                 android:padding="12dp" />
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="16dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/edit_text_border"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:padding="12dp" />
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="16dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/edit_text_border"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
                 android:padding="12dp" />
@@ -105,11 +105,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="28dp"
-                android:backgroundTint="#3DDC84"
+                android:background="@drawable/calm_blue_gradient"
+                android:backgroundTint="@null"
                 android:text="SIGN UP"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:translationZ="2dp"
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -123,31 +127,29 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
 
-                <Button
-                    android:id="@+id/btnGoogle"
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:backgroundTint="#F1F5F9"
-                    android:text="Google"
-                    android:textColor="#0F172A"
-                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="35dp"
+                   android:id="@+id/googleR"
+                    android:layout_height="35dp"
+                    android:layout_weight="4"
+                    android:src="@drawable/ic_gl"
+                    android:layout_marginRight="20dp"
+                    />
 
-                <Button
-                    android:id="@+id/btnGithub"
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:backgroundTint="#F1F5F9"
-                    android:text="GitHub"
-                    android:textColor="#0F172A"
-                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                   android:id="@+id/githubR"
+                    android:layout_height="35dp"
+                    android:layout_weight="4"
+                    android:src="@drawable/ic_github"
+                    />
+
             </LinearLayout>
 
         </LinearLayout>
