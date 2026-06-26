@@ -100,20 +100,17 @@
                 android:inputType="textPassword"
                 android:padding="12dp" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/btnSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="28dp"
                 android:background="@drawable/calm_blue_gradient"
-                android:backgroundTint="@null"
                 android:text="SIGN UP"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:translationZ="2dp"
-                />
-
+                android:elevation="2dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -129,26 +126,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal"
-                android:weightSum="10"
-                >
+                android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/googleR"
                     android:layout_width="35dp"
-                   android:id="@+id/googleR"
                     android:layout_height="35dp"
-                    android:layout_weight="4"
+                    android:layout_marginEnd="24dp"
                     android:src="@drawable/ic_gl"
-                    android:layout_marginRight="20dp"
-                    />
+                    android:contentDescription="Google Signup" />
 
                 <ImageView
-                    android:layout_width="30dp"
-                   android:id="@+id/githubR"
+                    android:id="@+id/githubR"
+                    android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:layout_weight="4"
                     android:src="@drawable/ic_github"
-                    />
+                    android:contentDescription="Github Signup" />
 
             </LinearLayout>
 
